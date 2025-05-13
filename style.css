@@ -1,0 +1,31 @@
+/* Reset some default spacing */
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+}
+
+/* Navbar styling */
+.navbar {
+  background-color: #333;
+  overflow: hidden;
+}
+
+/* Navbar links */
+.navbar a {
+  float: left;
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 20px;
+  text-decoration: none;
+}
+
+/* Hover effect */
+.navbar a:hover {
+  background-color: #575757;
+}
+
+/* Page content styling */
+.content {
+  padding: 20px;
+}
