@@ -1,11 +1,32 @@
-
-*{
-    margin: 0px;
-    font-family: Arial;
-    border:border-box;
+/* Navbar container */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  background-color: rgb(167, 146, 121); /* optional */
+  height:100px;
 }
 
-.navbar{
-    height: 80px;
-    background-color: rgb(133, 133, 63);
+/* Logo styling */
+.logo {
+
+  height: 100px;
+  object-fit: contain;
+}
+
+/* Log in link styling */
+.login a {
+  text-decoration: none;
+  color: #333;
+  font-weight: bold;
+  padding: 8px 16px;
+  border: 1px solid #333;
+  border-radius: 4px;
+  transition: background-color 0.3s;
+}
+
+.login a:hover {
+  background-color: #333;
+  color: white;
 }
