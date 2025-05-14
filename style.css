@@ -11,6 +11,7 @@ html, body {
   background-color: #E7E8D1; /* Light background */
   color: #ddb697;             /* Dark text for contrast */
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  text-shadow: #d75d00;
 }
 
 /* Header styling */
@@ -72,4 +73,20 @@ html, body {
 .login a:hover {
   background-color: #9f5a05;
   color: #ffffff;
+  
 }
+
+.box1{
+  background-color: rgb(247, 243, 243);
+  height: 440px;
+  display: flex;
+  margin: 15px;
+}
+.img1{
+  display: flex;
+  height: 400px;
+  }
+  .img2{
+  display: flex;
+  height: 400px;
+  }
