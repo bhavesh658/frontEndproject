@@ -146,7 +146,7 @@ html, body {
   display: flex;
 }
 
-.birthday-option,.wedding-option,.others-option{
+.birthday-option{
   /* background-color: aquamarine;
   height: 300px;
   width: 100%;
@@ -156,7 +156,7 @@ html, body {
   width: 100%;
   height: 300px;
   margin: 10px 10px;
-  background-image: url('images/img1.jpg'); /* Replace with your image path */
+  background-image: url('images/Birthday.webp'); /* Replace with your image path */
   background-size: cover;       /* Scale image to cover the entire div */
   background-position: center;  /* Center the image */
   background-repeat: no-repeat; /* Prevent image from repeating */
@@ -164,11 +164,37 @@ html, body {
   border-radius: 10px;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
 }
+.wedding-option{
+  width: 100%;
+  height: 300px;
+  margin: 10px 10px;
+  background-image: url('images/wedding.jpg'); /* Replace with your image path */
+  background-size: cover;       /* Scale image to cover the entire div */
+  background-position: center;  /* Center the image */
+  background-repeat: no-repeat; /* Prevent image from repeating */
+  border: 2px solid #ccc;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+.others-option{
+  width: 100%;
+  height: 300px;
+  margin: 10px 10px;
+  background-image: url('images/img1.jpg'); /* Replace with your image path */
+  background-size: cover;       /* Scale image to cover the entire div */
+  background-position: center;  /* Center the image */
+  background-repeat: no-repeat; /* Prevent image from repeating */
+  border: 2px solid #ccc;
+  border-radius: 10px ;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
 
 .birthday{
   height: 50px;
+  border-radius: 10px ;
   background-color: white;
   color: palevioletred ;
   text-align: center;
+
   
 }
