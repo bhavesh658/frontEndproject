@@ -1,0 +1,150 @@
+/* Reset default margins and padding */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Style for the whole page */
+html, body {
+  height: 100%;
+  background-color: #fff0f0; /* Light background */
+  color: #ddb697;             /* Dark text for contrast */
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  text-shadow: #d75d00;
+}
+
+/* Header styling */
+.header {
+  background-color:#fff0f0; ;
+  padding: 20px 40px;
+}
+
+/* Navbar container */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* Logo */
+.logo {
+  margin-left: 40px;
+  height: 100px;
+  background-color: transparent;
+}
+
+/* Action links container */
+.action {
+  display: flex;
+  gap: 50px;
+}
+
+/* Action links (Home, About, Services) */
+.actionbar {
+  text-decoration: none;
+  color:#d63384; /* Orange-ish text */
+  font-size: 20px;
+
+  transition: color 0.3s, border-bottom 0.3s;
+}
+
+.actionbar:hover {
+  color: #d63384;
+  border-bottom: 2px solid #d63384;
+}
+
+
+ .login img{
+  height: 40px;
+  margin-right: 30px;
+ }
+.banner {
+  display: flex;
+  justify-content: center;
+}
+.banner img{
+  width: 70%;
+}
+.button{
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+}
+.button a{
+  width: 120px;
+  height: 30px;
+  border-radius: 20px;
+  text-align: center;
+  text-decoration: none;
+  color: #d63384;
+  border: 2px solid #d63384;
+}
+.button a:hover{
+  background-color: #d63384;
+  color: white;
+
+}
+.service{
+  margin-top: 20px;
+   
+}
+#service h3{
+  color: black;
+}
+.first{
+  text-align: center;
+  font-size: 30px;
+}
+.second{
+  text-align: center;
+  font-size: 40px;
+}
+/* CSS */
+.images {
+  display: flex;
+  flex-wrap: wrap;            /* wraps images on small screens */
+  justify-content: center;    /* center images */
+  gap: 20px;                  /* space between images */
+  padding: 20px;
+}
+
+.img {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  transition: transform 0.3s ease;
+}
+
+.img img {
+  width: 200px;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 10px 10px 0 0;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+.img p{
+  margin-top: 3px;
+}
+.img button {
+  
+  width: 200px;               /* button matches image width */
+  padding: 8px 0;
+  background-color: #ff4081;
+  border: none;
+  color: white;
+  font-weight: bold;
+  border-radius: 0 0 10px 10px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s ease;
+}
+
+.img button:hover {
+  background-color: #e91e63;
+}
+
+.img:hover {
+  transform: scale(1.05);
+}
+
