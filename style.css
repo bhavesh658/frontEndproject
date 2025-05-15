@@ -8,7 +8,7 @@
 /* Style for the whole page */
 html, body {
   height: 100%;
-  background-color: #fff0f5; /* Light background */
+  background-color: #fff0f0; /* Light background */
   color: #ddb697;             /* Dark text for contrast */
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   text-shadow: #d75d00;
@@ -16,7 +16,7 @@ html, body {
 
 /* Header styling */
 .header {
-  background-color:#fff0f5; ;
+  background-color:#fff0f0; ;
   padding: 20px 40px;
 }
 
