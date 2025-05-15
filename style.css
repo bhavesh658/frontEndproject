@@ -101,3 +101,74 @@ html, body {
   color: white;
 
 }
+
+/* service navbar */
+
+.service-navbar{
+    background-color: #fff0f0;
+    height: 400px;
+    margin-top: 2%;
+}
+/* .service{
+  background-color: white;
+  height: 80px;
+  text-align: center;
+  padding-top: 20px;
+  text-decoration: underline;
+  color: #d63384;
+
+} */
+.service {
+  background-color: white;
+  height: 100px;
+  text-align: center;
+  padding-top: 20px;
+  text-decoration: underline;
+  color: #d63384;
+  border: 3px solid #d63384;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  margin: 30px auto;
+  width: 80%;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Optional hover effect */
+.service:hover {
+  transform: scale(1.02);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
+}
+
+
+.option-navbar{
+  height: 320px;
+  background-color:rgb(206, 175, 204);
+  display: flex;
+}
+
+.birthday-option,.wedding-option,.others-option{
+  /* background-color: aquamarine;
+  height: 300px;
+  width: 100%;
+  margin: 10px 10px;
+  
+  background-image: url("images/img1.jpg"); */
+  width: 100%;
+  height: 300px;
+  margin: 10px 10px;
+  background-image: url('images/img1.jpg'); /* Replace with your image path */
+  background-size: cover;       /* Scale image to cover the entire div */
+  background-position: center;  /* Center the image */
+  background-repeat: no-repeat; /* Prevent image from repeating */
+  border: 2px solid #ccc;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.birthday{
+  height: 50px;
+  background-color: white;
+  color: palevioletred ;
+  text-align: center;
+  
+}
