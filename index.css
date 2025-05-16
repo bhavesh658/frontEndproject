@@ -100,12 +100,11 @@ html, body {
   text-align: center;
   font-size: 40px;
 }
-/* CSS */
 .images {
   display: flex;
-  flex-wrap: wrap;            /* wraps images on small screens */
-  justify-content: center;    /* center images */
-  gap: 20px;                  /* space between images */
+  flex-wrap: wrap;            
+  justify-content: center;   
+  gap: 20px;                  
   padding: 20px;
 }
 
@@ -128,7 +127,7 @@ html, body {
 }
 .img button {
   
-  width: 200px;               /* button matches image width */
+  width: 200px;             
   padding: 8px 0;
   background-color: #ff4081;
   border: none;
@@ -147,4 +146,59 @@ html, body {
 .img:hover {
   transform: scale(1.05);
 }
+footer {
+  background-color: #c62d70;
+  padding: 50px 40px 20px 40px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: flex-start;
+  color: #fff;
+  gap: 60px;
+  position: relative;
+}
 
+.foot {
+  flex: 1;
+  min-width: 250px;
+  margin: 20px;
+;
+}
+
+.foot h4 {
+  margin-bottom: 15px;
+}
+
+.foot p {
+  margin: 8px 0;
+  color: black;
+}
+
+.social-icons {
+  display: flex;
+  gap: 15px;
+  margin-top: 15px;
+}
+
+.social-icons a img {
+  height: 30px;
+  width: 30px;
+  object-fit: contain;
+  transition: transform 0.3s ease;
+}
+
+.social-icons a img:hover {
+  transform: scale(1.1);
+}
+.foot a img{
+  height: 40px;
+}
+.copy-right {
+  width: 100%;
+  text-align: center;
+  margin-top: 40px;
+  font-size: 14px;
+  border-top: 1px solid #fff;
+  padding-top: 15px;
+  color: #eee;
+}
