@@ -146,8 +146,13 @@ html, body {
 .img:hover {
   transform: scale(1.05);
 }
+
+
+
+
+
 footer {
-  background-color: #c62d70;
+  background-color: #ba7090;
   padding: 50px 40px 20px 40px;
   display: flex;
   flex-wrap: wrap;
@@ -156,6 +161,7 @@ footer {
   color: #fff;
   gap: 60px;
   position: relative;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
 .foot {
@@ -171,7 +177,7 @@ footer {
 
 .foot p {
   margin: 8px 0;
-  color: black;
+  color: rgb(247, 241, 241);
 }
 
 .social-icons {
