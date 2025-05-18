@@ -7,7 +7,7 @@
 html, body {
   height: 100%;
   background-color: #fff0f0; 
-  color: #ddb697;             
+              
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   text-shadow: #d75d00;
 }
@@ -109,17 +109,19 @@ html, body {
   padding-top: 15px;
   color: #0f0f0f;
 }
-main{
+main {
   display: flex;
-  flex-wrap: wrap;
-  flex-direction: column;
-  gap: 5px;
-  align-items: center;
-  justify-content: center;
+  gap: 20px;
+  padding: 20px;
+  align-items: flex-start;
+}
+.book{
+  margin-left: 30px;
+  width: 90%;
 }
 .companies{
   width: 90%;
-  height: 90px;
+  height: 100px;
   border-bottom: 1px solid rgb(180, 51, 171);
   border-radius: 10px;
 }
@@ -156,6 +158,44 @@ main{
 .info img{
   width: 20px;
 }
+.contact {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 10px;
+  flex-wrap: wrap;
+}
+
+.contact a {
+  text-decoration: none;
+  color: #d63384;
+  font-weight: bold;
+  font-size: 14px;
+  margin-right: 10px;
+  transition: color 0.3s ease;
+}
+
+.contact a:hover {
+  color: #b0065b;
+}
+
+.contact button {
+  width: 90px;
+  height: 30px;
+  border-radius: 20px;
+  text-align: center;
+  text-decoration: none;
+  color: #d63384;
+  border: 2px solid #d63384;
+  background-color: transparent;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.contact button:hover {
+  background-color: #d63384;
+  color: white;
+}
 
 .search-box {
   display: flex;
@@ -189,7 +229,39 @@ main{
   height: 24px;
   object-fit: contain;
 }
-
-
+.hero {
+  margin: 60PX;
+  width: 250px;
+  height: auto;
+  background-color: #fff0f0;
+  padding: 20px;
+  border-right: 2px solid #d63384;
+  box-shadow: 2px 0 5px rgba(0, 0, 0, 0.05);
+  font-size: 14px;
+  color: #333;
+}
+.gallery{
+  text-decoration: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.gallery button{
+  width: 70px;
+  height: 30px;
+  text-align: center;
+  cursor: pointer;
+  background-color: #d63384;
+  color: #fff;
+  border-color: #d63384;
+  border-radius: 4px;
+}
+ .gallery button:hover{
+   background-color: #b0065b;
+   transform: scale(1.05);
+ }
+ .address{
+  margin-top: 40px;
+ }
 
 
