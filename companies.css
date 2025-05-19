@@ -230,7 +230,8 @@ main {
   object-fit: contain;
 }
 .hero {
-  margin: 60PX;
+  position: sticky;
+  top: 20px;
   width: 250px;
   height: auto;
   background-color: #fff0f0;
@@ -239,7 +240,9 @@ main {
   box-shadow: 2px 0 5px rgba(0, 0, 0, 0.05);
   font-size: 14px;
   color: #333;
+  align-self: flex-start;
 }
+
 .gallery{
   text-decoration: none;
   display: flex;
