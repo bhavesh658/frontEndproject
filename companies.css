@@ -135,7 +135,7 @@ main {
 .com p{
   color: #0f0f0f;
 }
-.com button{
+.com a button{
   width: 90px;
   height: 30px;
   border-radius: 20px;
@@ -143,6 +143,7 @@ main {
   text-decoration: none;
   color: #d63384;
   border: 2px solid #d63384;
+  background-color: transparent;
 }
 .com button:hover{
   background-color: #d63384;
@@ -158,11 +159,18 @@ main {
   width: 20px;
 }
 .contact {
-  display: flex;
+  /* display: flex;
   justify-content: space-between;
   align-items: center;
   margin-top: 10px;
+  flex-wrap: wrap; */
+  display: flex;
   flex-wrap: wrap;
+  justify-content: space-between;
+  margin-top: 10px;
+  text-align: center;
+  
+  
 }
 
 .contact a {
@@ -170,8 +178,9 @@ main {
   color: #d63384;
   font-weight: bold;
   font-size: 14px;
-  margin-right: 10px;
   transition: color 0.3s ease;
+  position: relative;
+ 
 }
 
 .contact a:hover {
@@ -179,7 +188,7 @@ main {
 }
 
 .contact a button {
-  width: 90px;
+  /* width: 90px;
   height: 30px;
   border-radius: 20px;
   text-align: center;
@@ -188,7 +197,19 @@ main {
   border: 2px solid #d63384;
   background-color: transparent;
   cursor: pointer;
-  transition: all 0.3s ease;
+  transition: all 0.3s ease; */
+  width: 90px;
+  height: 30px;
+  border-radius: 20px;
+  text-align: center;
+  text-decoration: none;
+  color: #d63384;
+  border: 2px solid #d63384;
+  background-color: transparent;
+  justify-content: space-evenly;
+  position: relative;
+
+  
 }
 
 .contact a button:hover {
