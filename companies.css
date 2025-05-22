@@ -115,6 +115,17 @@ main {
   padding: 20px;
   align-items: flex-start;
 }
+#notFoundMessage{
+  margin-top: 30px;
+  margin-left: 450px;
+  font-size: larger;
+  font-weight: 600;
+  text-align: center;
+  justify-content:center;
+  align-items: center;
+  display: none;
+
+}
 .book{
   margin-left: 30px;
   width: 90%;
