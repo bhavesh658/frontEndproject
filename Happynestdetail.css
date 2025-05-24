@@ -153,6 +153,23 @@ html, body {
 }
 
 
+.service{
+  margin-top: 20px;
+   
+}
+#service h3{
+  color: black;
+}
+.first{
+  text-align: center;
+  font-size: 30px;
+}
+.second{
+  text-align: center;
+  font-size: 40px;
+}
+
+
 
 .plane-platnium,.plane-gold,.plane-silver{
   height: 400px ;
@@ -161,7 +178,8 @@ html, body {
   margin: 20px 20px;
   border-radius: 20px ;
   box-shadow: 0 4px 10px rgba(132, 37, 37, 0.1);
-  background-color: rgb(229, 228, 226);
+  /* background-color: rgb(229, 228, 226); */
+  background-color: #c0c0c0;
 }
 
 .plane h2 {
