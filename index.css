@@ -42,6 +42,7 @@ html, body {
 
 
 .actionbar {
+  border: none;
   text-decoration: none;
   color:#d63384; 
   font-size: 20px;
