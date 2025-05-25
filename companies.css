@@ -147,7 +147,7 @@ main {
 .com p{
   color: #0f0f0f;
 }
-.com a button{
+.com button{
   width: 90px;
   height: 30px;
   border-radius: 20px;
@@ -156,6 +156,7 @@ main {
   color: #d63384;
   border: 2px solid #d63384;
   background-color: transparent;
+  cursor: pointer;
 }
 .com button:hover{
   background-color: #d63384;
@@ -171,11 +172,7 @@ main {
   width: 20px;
 }
 .contact {
-  /* display: flex;
-  justify-content: space-between;
-  align-items: center;
-  margin-top: 10px;
-  flex-wrap: wrap; */
+
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
@@ -199,17 +196,8 @@ main {
   color: #b0065b;
 }
 
-.contact a button {
-  /* width: 90px;
-  height: 30px;
-  border-radius: 20px;
-  text-align: center;
-  text-decoration: none;
-  color: #d63384;
-  border: 2px solid #d63384;
-  background-color: transparent;
-  cursor: pointer;
-  transition: all 0.3s ease; */
+.contact  button {
+
   width: 90px;
   height: 30px;
   border-radius: 20px;
@@ -220,11 +208,12 @@ main {
   background-color: transparent;
   justify-content: space-evenly;
   position: relative;
+  cursor: pointer;
 
   
 }
 
-.contact a button:hover {
+.contact  button:hover {
   background-color: #d63384;
   color: white;
 }
