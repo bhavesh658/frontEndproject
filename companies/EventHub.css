@@ -1,0 +1,317 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+
+html, body {
+  height: 100%;
+  background-color: #fff0f0; 
+  color: #ddb697;             
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  text-shadow: #d75d00;
+}
+
+
+.header {
+  background-color:#fff0f0; ;
+  padding: 20px 40px;
+  
+  
+}
+
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+}
+
+
+.logo {
+  margin-left: 40px;
+  height: 100px;
+  background-color: transparent;
+}
+
+
+.action {
+  display: flex;
+  gap: 50px;
+}
+
+
+.actionbar {
+  border: none;
+  text-decoration: none;
+  color:#d63384; 
+  font-size: 20px;
+  transition: color 0.3s, border-bottom 0.3s;
+  border-bottom: 2px solid transparent;
+  
+}
+
+.actionbar:hover {
+  color: #d63384;
+  border-bottom: 2px solid #d63384;
+}
+
+
+ .login img{
+  height: 40px;
+  margin-right: 30px;
+ }
+
+
+/* main css */
+
+.company-welcome{
+    height:40px;
+    color: #d63384;
+  
+}
+.company-welcome h2{
+    text-align: center;
+
+}
+
+
+
+
+.contact-details {
+  position: sticky;
+  top: 20px;
+  width: 250px;
+  height: auto;
+  background-color: #fff0f0;
+  padding: 20px;
+  border-right: 2px solid #d63384;
+  box-shadow: 2px 0 5px rgba(0, 0, 0, 0.05);
+  font-size: 14px;
+  color: #333;
+  align-self: flex-start;
+}
+.contact-details a{
+  text-decoration: none;
+}
+
+ .address{
+  margin-top: 40px;
+ }
+
+ main {
+  display: flex;
+  gap: 20px;
+  padding: 20px;
+  align-items: flex-start;
+}
+
+
+
+ .image {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    
+    
+}
+.photo{
+    margin-top: 40px;
+    margin-left: 15px;
+    margin-right: 15px;
+    width: 250px;
+    height: 250px;
+    border-radius: 10px;
+    transition: transform 0.3s ease;
+}
+.photo:hover {
+  transform: scale(1.05);
+}
+
+
+/* plane saction */
+
+.plane{
+  height: 500px;
+  background-color:transparent  ;
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  text-align: center;
+}
+
+.plane-platnium:hover{
+  transform: scale(1.05);
+}
+.plane-gold:hover{
+  transform: scale(1.05);
+}
+.plane-silver:hover{
+  transform: scale(1.05);
+}
+
+
+.service{
+  margin-top: 20px;
+   
+}
+#service h3{
+  color: black;
+}
+.first{
+  text-align: center;
+  font-size: 30px;
+}
+.second{
+  text-align: center;
+  font-size: 40px;
+}
+
+
+
+.plane-platnium,.plane-gold,.plane-silver{
+  height: 400px ;
+  width: 300px;
+  display: flexbox;
+  margin: 20px 20px;
+  border-radius: 20px ;
+  box-shadow: 0 4px 10px rgba(132, 37, 37, 0.1);
+  /* background-color: rgb(229, 228, 226); */
+  background-color: #c0c0c0;
+}
+
+.plane h2 {
+    color: #333;
+    margin-bottom: 20px;
+    font-size: 24px;
+    margin-top: 20px;
+}
+
+.plane h2 i {
+    margin-right: 10px;
+    color: #b49f68;}
+.plane ul {
+    list-style: none;
+    padding: 0;
+    margin: 0 0 20px;
+    color: #444;
+    text-align: center;
+    margin-left: 15px;
+}
+.plane ul li {
+    margin: 10px 0;
+    position: relative;
+    padding-left: 20px;
+}
+
+.plane ul li::before {
+    content: "✔";
+    position: absolute;
+    left: 0;
+    color: #007b5e;
+}
+
+.price {
+    font-size: 28px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    color: #222;
+}
+
+.book-btn {
+    background-color: #291dd587;
+    color: #fff;
+    border: none;
+    padding: 12px 24px;
+    font-size: 16px;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.book-btn:hover {
+    background-color: #0d9263;
+}
+
+
+.plane-platinum {
+    background-color: #c0c0c0;
+
+}
+
+.plane-gold {
+    background-color: #c0c0c0;
+
+}
+
+.plane-silver {
+    background-color: #c0c0c0;
+}
+
+
+
+
+/* fotter */
+
+footer {
+  margin-top: 20px;
+  background-color: #ba7090;
+  padding: 50px 40px 20px 40px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: flex-start;
+  color: #fff;
+  gap: 60px;
+  position: relative;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.foot {
+  flex: 1;
+  min-width: 250px;
+  margin: 20px;
+;
+}
+
+.foot h4 {
+  margin-bottom: 15px;
+}
+
+.foot p {
+  margin: 8px 0;
+  color: rgb(247, 241, 241);
+}
+
+.social-icons {
+  display: flex;
+  gap: 15px;
+  margin-top: 15px;
+}
+
+.social-icons a img {
+  height: 30px;
+  width: 30px;
+  object-fit: contain;
+  transition: transform 0.3s ease;
+}
+
+.social-icons a img:hover {
+  transform: scale(1.1);
+}
+.foot a img{
+  height: 40px;
+}
+.copy-right {
+  width: 100%;
+  text-align: center;
+  margin-top: 40px;
+  font-size: 14px;
+  border-top: 1px solid #fff;
+  padding-top: 15px;
+  color: #0f0f0f;
+}
+
