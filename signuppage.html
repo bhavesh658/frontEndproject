@@ -13,16 +13,37 @@
              <h2>Create Account</h2>
         </div>
        
-        <form action="/login" method="POST">
-             <input type="text" name="fullname" placeholder="Full Name" required />
-             <input type="email" name="email" placeholder="Email Address" required />
-             <input type="password" id="password" name="password" placeholder="Password" required />
-             <input type="password" id="confirm_password" name="confirm_password" placeholder="Confirm Password" required />
-
-            <button type="submit">Submit to create account</button>
-        </form>
+             <form action="http://localhost:5000/signup" method="POST">
+                 <input type="text" name="fullname" placeholder="Full Name" required />
+                 <input type="email" name="email" placeholder="Email Address" required />
+                 <input type="password" name="password" placeholder="Password" required />
+                 <input type="password" name="confirm_password" placeholder="Confirm Password" required />
+                 <button type="submit">Submit to create account</button>
+            </form>
         <p class="signup-link">Already have an account? <a href="website login page.html">Login</a>
         
     </div>
 </body>
+<script>
+document.getElementById('signupForm').addEventListener('submit', async function (e) {
+    e.preventDefault();
+
+    const formData = new FormData(this);
+    const data = Object.fromEntries(formData.entries());
+
+    const response = await fetch('http://localhost:5000/signup', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify(data)
+    });
+
+    if (response.ok) {
+        // ✅ Redirect to home page after successful signup
+        window.location.href = 'index.html'; // make sure home.html exists
+    } else {
+        const errorMsg = await response.text();
+        alert(errorMsg);
+    }
+});
+</script>
 </html>
