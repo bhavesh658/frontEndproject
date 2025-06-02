@@ -42,6 +42,7 @@ html, body {
 
 
 .actionbar {
+  background-color: #fff0f0;
   border: none;
   text-decoration: none;
   color:#d63384; 
@@ -54,6 +55,7 @@ html, body {
   color: #d63384;
   border-bottom: 2px solid #d63384;
 }
+
 
 
  .login img{

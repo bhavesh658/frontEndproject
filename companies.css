@@ -36,6 +36,7 @@ html, body {
 }
 
 .actionbar {
+  background-color: #fff0f0;
   border: none;
   text-decoration: none;
   color:#d63384; 
