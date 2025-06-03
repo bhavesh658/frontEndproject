@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Payment Page</title>
+</head>
+<body>
+  <h1>Payment Details</h1>
+  <p id="plan"></p>
+  <p id="price"></p>
+
+  <script>
+    const plan = localStorage.getItem('selectedPlan');
+    const price = localStorage.getItem('selectedPrice');
+
+    if(plan && price){
+      document.getElementById('plan').innerText = `Plan: ${plan}`;
+      document.getElementById('price').innerText = `Price: ₹${price}`;
+    } else {
+      document.getElementById('plan').innerText = 'No plan selected';
+      document.getElementById('price').innerText = '';
+    }
+  </script>
+</body>
+</html>
