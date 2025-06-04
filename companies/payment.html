@@ -4,6 +4,8 @@
 <head>
   <meta charset="UTF-8" />
   <title>Payment Page</title>
+  <script src="https://checkout.razorpay.com/v1/checkout.js"></script>
+
   <style>
     body {
       background-color: #fff0f0;
@@ -67,11 +69,15 @@
     }
 
   
-    document.getElementById('rzp-button1').onclick = function (e) {
-      e.preventDefault();
+        document.getElementById("rzp-button1").onclick = async function () {
+      const amount = price;
 
-      const amountInPaise = parseInt(price) * 100;
-
+      const res = await fetch("http://localhost:5000/create-order", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({ amount })
+      });  
+ const orderData = await res.json();
       const options = {
         key: "YOUR_RAZORPAY_KEY_ID", // Replace with your Razorpay Key ID
         amount: amountInPaise,
