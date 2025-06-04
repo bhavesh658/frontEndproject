@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BookMyPlanner - Login</title>
+    <link rel="stylesheet" href="login.css">
+</head>
+<body>
+    <div class="login-container">
+        <div class="logo">
+            <img src="images/login.png" alt="User photo Logo">
+        </div>
+        <h2>Login to BookMyPlanner</h2>
+        <form  action="http://localhost:5000/api/auth/signin" method="POST">
+            <input type="text" name="name" placeholder="Username" required>
+            <input type="password" name="password" placeholder="Password" required>
+            <button type="submit">Login</button>
+        </form>
+        <p class="signup-link">Don't have an account? <a href="signuppage.html">Sign up</a></p>
+        <a href="forgetpage.html" class="forget-password"> forget password</a>
+    </div>
+</body>
+<script>
+
+
+document.querySelector('form').addEventListener('submit', async function(e) {
+  e.preventDefault();
+
+  const formData = new FormData(this);
+  const data = Object.fromEntries(formData.entries());
+
+  const response = await fetch('http://localhost:5000/api/auth/signin', {
+    method: 'POST',
+    headers: {'Content-Type': 'application/json'},
+    body: JSON.stringify(data)
+  });
+
+  if (response.ok) {
+    window.location.href = 'index.html';
+  } else {
+    const error = await response.text();
+    alert(error);
+  }
+});
+
+</script>
+</html>
