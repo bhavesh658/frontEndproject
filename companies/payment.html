@@ -1,25 +1,96 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8" />
   <title>Payment Page</title>
+  <style>
+    body {
+      background-color: #fff0f0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+    }
+
+    div {
+      text-align: center;
+      width: 30%;
+      height: 250px;
+      border: 2px solid #d63384;
+      border-radius: 20px;
+      padding: 30px;
+    }
+
+    h1 {
+      color: #d63384;
+    }
+    p{
+      font-size: 30px;
+    }
+    button {
+      font-size: 20px;
+      width: 150px;
+      height: 50px;
+      border-radius: 20px;
+      background-color: #d63384;
+      color: white;
+      border: none;
+      cursor: pointer;
+    }
+
+    button:hover {
+      background-color: #c2185b;
+    }
+  </style>
+  <script src="https://checkout.razorpay.com/v1/checkout.js"></script>
 </head>
+
 <body>
-  <h1>Payment Details</h1>
-  <p id="plan"></p>
-  <p id="price"></p>
+  <div>
+    <h1>Payment Details</h1>
+    <p id="plan"></p>
+    <p id="price"></p>
+    <button id="rzp-button1">Book Now</button>
+  </div>
 
   <script>
     const plan = localStorage.getItem('selectedPlan');
     const price = localStorage.getItem('selectedPrice');
 
-    if(plan && price){
+    if (plan && price) {
       document.getElementById('plan').innerText = `Plan: ${plan}`;
       document.getElementById('price').innerText = `Price: ₹${price}`;
     } else {
       document.getElementById('plan').innerText = 'No plan selected';
       document.getElementById('price').innerText = '';
     }
+
+  
+    document.getElementById('rzp-button1').onclick = function (e) {
+      e.preventDefault();
+
+      const amountInPaise = parseInt(price) * 100;
+
+      const options = {
+        key: "YOUR_RAZORPAY_KEY_ID", // Replace with your Razorpay Key ID
+        amount: amountInPaise,
+        currency: "INR",
+        name: "BookMyPlanner",
+        description: plan,
+        handler: function (response) {
+          alert("Payment successful!\nPayment ID: " + response.razorpay_payment_id);
+        
+        },
+        theme: {
+          color: "#d63384"
+        }
+      };
+
+      const rzp = new Razorpay(options);
+      rzp.open();
+    };
   </script>
 </body>
+
 </html>

@@ -194,9 +194,8 @@ main {
 .contact a:hover {
   color: #b0065b;
 }
-
-.contact  button {
-
+  .btn {
+  margin-left: 500px;
   width: 90px;
   height: 30px;
   border-radius: 20px;
@@ -212,7 +211,7 @@ main {
   
 }
 
-.contact  button:hover {
+.btn:hover {
   background-color: #d63384;
   color: white;
 }
