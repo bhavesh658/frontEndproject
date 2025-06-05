@@ -7,7 +7,7 @@ const User = require("../models/user");
 // JWT Secret (Use environment variable in real apps)
 //const JWT_SECRET = 'your_jwt_secret_key';
 require("dotenv").config();
-const JWT_SECRET = process.env.JWT_SECRET || addfcidskfjfkjdkhkljoladfjoasdjklj;
+const JWT_SECRET = process.env.JWT_SECRET || "addfcidskfjfkjdkhkljoladfjoasdjklj";
 
 router.post("/signup", async (req, res) => {
   const { name, email, password } = req.body;
