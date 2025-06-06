@@ -90,7 +90,9 @@
                 </ul>
                 <br>
                 <div class="price">₹​6999</div>
-                <button class="book-btn"><i class="fas fa-calendar-check"></i> Book Now</button>
+ <button class="book-btn" data-plan="Silver Plan" data-price="1499">
+        <i class="fas fa-calendar-check"></i> Book Now
+      </button>
             </div>
                <div class="plane-gold">
                      <h2><i class="fas fa-medal"></i> Gold Plan</h2><br>
@@ -106,7 +108,9 @@
 
         
         <div class="price">₹​2699</div>
-        <button class="book-btn"><i class="fas fa-calendar-check"></i> Book Now</button>
+ <button class="book-btn" data-plan="Silver Plan" data-price="1499">
+        <i class="fas fa-calendar-check"></i> Book Now
+      </button>
             </div>
                 <div class="plane-silver">
                      <h2><i class="fas fa-star"></i> Silver Plan</h2>
@@ -119,7 +123,9 @@
         </ul>
         <br><br>
         <div style="margin-top: 10px;" class="price">₹​1699</div>
-        <button class="book-btn"><i class="fas fa-calendar-check"></i> Book Now</button>
+ <button class="book-btn" data-plan="Silver Plan" data-price="1499">
+        <i class="fas fa-calendar-check"></i> Book Now
+      </button>
             </div>
     </div>
 
@@ -162,4 +168,18 @@
   </footer>
 
 </body>
+<script>
+  
+  const buttons = document.querySelectorAll('.book-btn');
+
+  buttons.forEach(button => {
+    button.addEventListener('click', () => {
+      const plan = button.getAttribute('data-plan');
+      const price = button.getAttribute('data-price');
+      localStorage.setItem('selectedPlan', plan);
+      localStorage.setItem('selectedPrice', price);
+      window.location.href = 'payment.html';
+    });
+  });
+</script>
 </html>
