@@ -36,9 +36,9 @@ router.post("/signup", async (req, res) => {
 });
 router.post("/signin", async (req, res) => {
   const { email, password } = req.body;
-  if (!email || !password) {
-    return res.status(400).json({ msg: "Please enter all fields" });
-  }
+  // if (!email || !password) {
+  //   return res.status(400).json({ msg: "Please enter valid username ans password" });
+  // }
 
   try {
     // Find user by email

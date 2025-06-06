@@ -5,7 +5,7 @@ require('dotenv').config();
 const app = express();
 
 
-// const JWT_SECRET = process.env.JWT_SECRET;
+const JWT_SECRET = process.env.JWT_SECRET || "addfcidskfjfkjdkhkljoladfjoasdjklj";
 
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
