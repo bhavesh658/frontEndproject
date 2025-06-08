@@ -12,7 +12,7 @@
             <img src="images/login.png" alt="User photo Logo">
         </div>
         <h2>Login to BookMyPlanner</h2>
-        <form  action="http://localhost:5000/api/auth/signin" method="POST">
+        <form id="loginForm" action="http://localhost:5000/api/auth/signin" method="POST">
             <input type="text" name="name" placeholder="Email" required>
             <input type="password" name="password" placeholder="Password" required>
             <button type="submit">Login</button>
@@ -26,13 +26,13 @@
 
     document.getElementById('loginForm').addEventListener('submit', async function(e) {
         e.preventDefault(); // prevent page reload
-
+         console.log('Form submitted');
         // Get form values
         const name = e.target.name.value;
         const password = e.target.password.value;
 
         try {
-            const response = await fetch('http://localhost:5000/api/auth/signin', {
+            const response = await fetch('http://localhost:3000/api/auth/signin', {
                 method: 'POST',
                 headers: {
                     'Content-Type': 'application/json'

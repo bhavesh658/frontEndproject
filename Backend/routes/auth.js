@@ -36,9 +36,9 @@ router.post("/signup", async (req, res) => {
 });
 router.post("/signin", async (req, res) => {
   const { email, password } = req.body;
-  // if (!email || !password) {
-  //   return res.status(400).json({ msg: "Please enter valid username ans password" });
-  // }
+  if (!email || !password) {
+    return res.status(400).json({ msg: "Please enter valid username ans password" });
+  }
 
   try {
     // Find user by email
@@ -58,9 +58,6 @@ router.post("/signin", async (req, res) => {
     console.error(err.message);
     res.status(500).send("Server error");
   }
-});
-router.get("/test", (req, res) => {
-  res.send("Signup route working!");
 });
 
 module.exports = router;

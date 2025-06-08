@@ -13,7 +13,7 @@
              <h2>Create Account</h2>
         </div>
        
-             <form action="http://localhost:5000/api/auth/signup" method="POST">
+             <form id="signupForm" action="http://localhost:5000/api/auth/signup" method="POST">
                  <input type="text" name="name" placeholder="Full Name" required />
                  <input type="email" name="email" placeholder="Email Address" required />
                  <input type="password" name="password" placeholder="Password" required />
@@ -31,7 +31,7 @@ document.getElementById('signupForm').addEventListener('submit', async function 
     const formData = new FormData(this);
     const data = Object.fromEntries(formData.entries());
 
-    const response = await fetch('http://localhost:5000/api/auth/signup', {
+    const response = await fetch('http://localhost:3000/api/auth/signup', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify(data)
