@@ -267,3 +267,128 @@ main {
   margin-top: 40px;
  }
 
+/* Responsive Styles */
+@media (max-width: 1200px) {
+  .action {
+    gap: 20px;
+    margin-left: 10px;
+  }
+
+  .search-box input[type="text"] {
+    width: 200px;
+  }
+
+  .btn {
+    margin-left: 0;
+  }
+}
+
+@media (max-width: 992px) {
+  main {
+    flex-direction: column;
+    padding: 10px;
+    align-items: center;
+  }
+
+  .hero {
+    position: relative;
+    top: 0;
+    width: 90%;
+    border-right: none;
+    box-shadow: none;
+    padding: 10px;
+    margin-bottom: 20px;
+  }
+
+  .book {
+    width: 100%;
+    margin-left: 0;
+  }
+
+  .companies {
+    padding: 10px;
+  }
+
+  .btn {
+    margin-left: 0;
+    width: 80px;
+    height: 30px;
+  }
+}
+
+@media (max-width: 768px) {
+  .navbar {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+  }
+
+  .logo {
+    margin-left: 0;
+    height: 80px;
+  }
+
+  .action {
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    gap: 10px;
+    margin-left: 0;
+  }
+
+  .search-box input[type="text"] {
+    width: 150px;
+  }
+
+  footer {
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+  }
+
+  .foot {
+    margin: 10px 0;
+  }
+
+  .copy-right {
+    margin-top: 20px;
+    padding-top: 10px;
+  }
+}
+
+@media (max-width: 576px) {
+  .hero h2 {
+    font-size: 20px;
+  }
+
+  .hero p {
+    font-size: 14px;
+  }
+
+  .companies h3 {
+    font-size: 18px;
+  }
+
+  .info p {
+    font-size: 14px;
+  }
+
+  .contact a {
+    font-size: 12px;
+  }
+
+  .btn {
+    width: 70px;
+    height: 28px;
+    font-size: 12px;
+  }
+
+  .search-box input[type="text"] {
+    width: 120px;
+    padding: 8px;
+  }
+
+  .search-box button img {
+    width: 20px;
+    height: 20px;
+  }
+}
