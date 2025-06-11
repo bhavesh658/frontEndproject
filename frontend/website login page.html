@@ -14,7 +14,7 @@
             <img src="images/login.png" alt="User photo Logo">
         </div>
         <h2>Login to BookMyPlanner</h2>
-        <form id="loginForm" action="http://localhost:5000/api/auth/signin" method="POST">
+        <form id="loginForm" action="http://localhost:3000/auth/signin" method="POST">
             <input type="text" name="email" placeholder="Email" required>
             <input type="password" name="password" placeholder="Password" required>
             <button type="submit">Login</button>
@@ -34,7 +34,7 @@
         const password = e.target.password.value;
 
         try {
-            const response = await fetch('http://localhost:3000/api/auth/signin', {
+            const response = await fetch('http://localhost:3000/auth/signin', {
                 method: 'POST',
                 headers: {
                     'Content-Type': 'application/json'
