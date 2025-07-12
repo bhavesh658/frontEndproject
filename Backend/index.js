@@ -1,12 +1,12 @@
-const express= require('express');
-const connectDB = require('./db');
+const express = require('express');
+const cors = require('cors');
 const bodyParser = require('body-parser'); 
+require('dotenv').config();
+const connectDB = require('./db');
+
 
 const authRoutes = require('./routes/auth');
 
-const cors = require('cors');
-
-require('dotenv').config();
 
 
 const app = express();
@@ -34,3 +34,4 @@ app.get('/api',(req,res)=>{
 app.listen(PORT,()=>{
     console.log(`Server started on port ${PORT}`)
 })
+   

@@ -5,7 +5,7 @@ require('dotenv').config();
 
 const signup= async(req,res)=>{
     try{
-        const [name,email,password]=req.body;
+        const {name,email,password}=req.body;
         const user = await UserModel.findOne({email});
         if(user){
             return res.status(409).json({message: `user already exits`,success: false})
@@ -26,7 +26,7 @@ const signup= async(req,res)=>{
 }
 const signin= async(req,res)=>{
     try{
-        const [email,password]=req.body;
+        const {email,password}=req.body;
         const user = await UserModel.findOne({email});
         if(!user){
             return res.status(403).json({message: `Invalid username and password`,success: false})
@@ -56,3 +56,4 @@ const signin= async(req,res)=>{
     }
 }
 module.exports={signup,signin}
+
